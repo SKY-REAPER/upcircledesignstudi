@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPCIRCLE DESIGN STUDIO | Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(12,12,12,0.75),rgba(12,12,12,0.75)),
+        url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at center,
+    rgba(212,175,55,0.08),
+    rgba(0,0,0,0.85));
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    max-width:900px;
+    padding:60px;
+}
+
+.logo-line{
+    width:120px;
+    height:1px;
+    background:#d4af37;
+    margin:0 auto 25px;
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4.5rem;
+    letter-spacing:6px;
+    font-weight:500;
+    color:#f5f5f5;
+    text-transform:uppercase;
+}
+
+.subtitle{
+    margin-top:12px;
+    letter-spacing:5px;
+    color:#d4af37;
+    font-size:0.95rem;
+    text-transform:uppercase;
+}
+
+.heading{
+    margin-top:70px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:3.5rem;
+    font-weight:300;
+    line-height:1.2;
+}
+
+.gold{
+    color:#d4af37;
+}
+
+.description{
+    margin:30px auto;
+    max-width:700px;
+    color:#d7d7d7;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+.contact-box{
+    margin-top:50px;
+    display:inline-block;
+    padding:22px 40px;
+    border:1px solid rgba(212,175,55,0.35);
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(10px);
+}
+
+.contact-title{
+    color:#d4af37;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:0.8rem;
+    margin-bottom:10px;
+}
+
+.contact-name{
+    font-size:1.1rem;
+    margin-bottom:8px;
+}
+
+.contact-phone{
+    text-decoration:none;
+    color:#fff;
+    font-size:1.3rem;
+    font-weight:500;
+}
+
+.contact-phone:hover{
+    color:#d4af37;
+}
+
+.footer{
+    margin-top:60px;
+    color:#9d9d9d;
+    letter-spacing:2px;
+    font-size:0.8rem;
+}
+
+.floating-border{
+    position:absolute;
+    inset:35px;
+    border:1px solid rgba(212,175,55,0.18);
+    pointer-events:none;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.container > *{
+    animation:fadeUp 1.3s ease forwards;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:30px;
+    }
+
+    .logo{
+        font-size:2.5rem;
+        letter-spacing:3px;
+    }
+
+    .heading{
+        font-size:2.2rem;
+    }
+
+    .description{
+        font-size:0.95rem;
+    }
+
+    .floating-border{
+        inset:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+<div class="floating-border"></div>
+
+<div class="container">
+
+    <div class="logo-line"></div>
+
+    <div class="logo">
+        UPCIRCLE
+    </div>
+
+    <div class="subtitle">
+        Design Studio
+    </div>
+
+    <div class="heading">
+        Crafting Timeless <span class="gold">Luxury Interiors</span><br>
+        Our New Digital Experience Is Coming Soon
+    </div>
+
+    <div class="description">
+        We are currently curating an exceptional online experience that reflects
+        our passion for luxury, elegance, and bespoke interior design. Our website
+        is undergoing refinement and will be unveiled shortly.
+    </div>
+
+    <div class="contact-box">
+        <div class="contact-title">For Enquiries</div>
+        <div class="contact-name">KASHISH SANKLAN</div>
+        <a class="contact-phone" href="tel:+918630215019">
+            +91 86302 15019
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 UPCIRCLE DESIGN STUDIO • LUXURY INTERIORS 
+    </div>
+
+</div>
+
+</body>
+</html>
